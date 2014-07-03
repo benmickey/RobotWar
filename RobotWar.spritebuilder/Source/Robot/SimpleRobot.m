@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, RobotAction) {
 };
 
 @implementation SimpleRobot {
-  RobotAction _currentRobotAction;
+  RobotAction _currentRobotAction; //robot action... 
 }
 
 - (void)hitWall:(RobotWallHitDirection)hitDirection hitAngle:(CGFloat)angle {
