@@ -20,7 +20,7 @@ static NSString *robotClass3 = @"TurretRobot";
 static NSString *robotCreator3 = @"Turret";
 */
 
-static NSString *robotClass4 = @"Terminator";
-static NSString *robotCreator4 = @"Terminator";
+static NSString *robotClass2 = @"Terminator";
+static NSString *robotCreator2 = @"Terminator";
 
 #endif

@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		33CB99C01965D59700A0BED2 /* Terminator.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CB99BF1965D59700A0BED2 /* Terminator.m */; };
 		6236628E19612C5500ECB220 /* AdvancedRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7636F7195BBCAA0070222B /* AdvancedRobot.m */; };
-=======
->>>>>>> e7762f7a2a3100574454f2b4905437b91c30f96c
 		6244629A1937DDD300895F2D /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 624462991937DDD300895F2D /* Robot.m */; };
 		629FCFF4193E71C300896E8C /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 629FCFF3193E71C300896E8C /* GameOverScene.m */; };
 		62C4F430194141DE0047553C /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C4F42F194141DE0047553C /* Helpers.m */; };
@@ -151,7 +148,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-<<<<<<< HEAD
 		624A3882193E7AF90054705C /* Robots */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,8 +163,6 @@
 			name = Robots;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> e7762f7a2a3100574454f2b4905437b91c30f96c
 		62C4F42D1941413E0047553C /* Engine */ = {
 			isa = PBXGroup;
 			children = (
@@ -421,11 +415,8 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
-<<<<<<< HEAD
 				65CC915A196141CF00838899 /* TurretRobot.m in Sources */,
 				33CB99C01965D59700A0BED2 /* Terminator.m in Sources */,
-=======
->>>>>>> e7762f7a2a3100574454f2b4905437b91c30f96c
 				62C4F430194141DE0047553C /* Helpers.m in Sources */,
 				65CC917F19648EEE00838899 /* TurretRobot.m in Sources */,
 				65CC917D19648EEE00838899 /* AdvancedRobot.m in Sources */,
