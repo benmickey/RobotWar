@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3302549E196AE3F200D4456D /* iRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3302549D196AE3F200D4456D /* iRobot.m */; };
 		33CB99C01965D59700A0BED2 /* Terminator.m in Sources */ = {isa = PBXBuildFile; fileRef = 33CB99BF1965D59700A0BED2 /* Terminator.m */; };
-		6236628E19612C5500ECB220 /* AdvancedRobot.m in Sources */ = {isa = PBXBuildFile; fileRef = BC7636F7195BBCAA0070222B /* AdvancedRobot.m */; };
 		6244629A1937DDD300895F2D /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 624462991937DDD300895F2D /* Robot.m */; };
 		629FCFF4193E71C300896E8C /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 629FCFF3193E71C300896E8C /* GameOverScene.m */; };
 		62C4F430194141DE0047553C /* Helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C4F42F194141DE0047553C /* Helpers.m */; };
@@ -67,7 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		33CB99BE1965D59700A0BED2 /* Terminator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Terminator.h; sourceTree = "<group>"; };
+		3302549C196AE3F200D4456D /* iRobot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRobot.h; sourceTree = "<group>"; };
+		3302549D196AE3F200D4456D /* iRobot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRobot.m; sourceTree = "<group>"; };
 		33CB99BF1965D59700A0BED2 /* Terminator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Terminator.m; sourceTree = "<group>"; };
 		624462981937DDD300895F2D /* Robot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Robot.h; path = Source/Robot.h; sourceTree = "<group>"; };
 		624462991937DDD300895F2D /* Robot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Robot.m; path = Source/Robot.m; sourceTree = "<group>"; };
@@ -148,21 +149,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		624A3882193E7AF90054705C /* Robots */ = {
-			isa = PBXGroup;
-			children = (
-				65CC9158196141CF00838899 /* TurretRobot.h */,
-				65CC9159196141CF00838899 /* TurretRobot.m */,
-				BC7636F6195BBCAA0070222B /* AdvancedRobot.h */,
-				BC7636F7195BBCAA0070222B /* AdvancedRobot.m */,
-				BC7636F8195BBCAA0070222B /* SimpleRobot.h */,
-				BC7636F9195BBCAA0070222B /* SimpleRobot.m */,
-				33CB99BE1965D59700A0BED2 /* Terminator.h */,
-				33CB99BF1965D59700A0BED2 /* Terminator.m */,
-			);
-			name = Robots;
-			sourceTree = "<group>";
-		};
 		62C4F42D1941413E0047553C /* Engine */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +184,8 @@
 				65CC917C19648EEE00838899 /* TurretRobot.m */,
 				BC0E62DA196A0CB600AED4CF /* NewAdvancedRobot.h */,
 				BC0E62DB196A0CB600AED4CF /* NewAdvancedRobot.m */,
+				3302549C196AE3F200D4456D /* iRobot.h */,
+				3302549D196AE3F200D4456D /* iRobot.m */,
 			);
 			name = Robots;
 			path = Source/Robot;
@@ -415,9 +403,9 @@
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				B7378994180767190076A88C /* MainScene.m in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
-				65CC915A196141CF00838899 /* TurretRobot.m in Sources */,
 				33CB99C01965D59700A0BED2 /* Terminator.m in Sources */,
 				62C4F430194141DE0047553C /* Helpers.m in Sources */,
+				3302549E196AE3F200D4456D /* iRobot.m in Sources */,
 				65CC917F19648EEE00838899 /* TurretRobot.m in Sources */,
 				65CC917D19648EEE00838899 /* AdvancedRobot.m in Sources */,
 				62E3A32419397BE400BD3F0F /* RobotAction.m in Sources */,
