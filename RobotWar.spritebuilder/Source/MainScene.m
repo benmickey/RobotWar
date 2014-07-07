@@ -36,9 +36,10 @@
       
       // intantiate two AIs
       Robot *robot1 = (Robot*) [[NSClassFromString(robotClass1) alloc] init];
-      Robot *robot2 = (Robot*) [[NSClassFromString(robotClass2) alloc] init];
-      Robot *robot3 = (Robot*) [[NSClassFromString(robotClass2) alloc] init];
-      _robots = [NSMutableArray arrayWithArray:@[robot1, robot2, robot3]];
+     // Robot *robot2 = (Robot*) [[NSClassFromString(robotClass2) alloc] init];
+      //Robot *robot3 = (Robot*) [[NSClassFromString(robotClass3) alloc] init];
+      Robot *robot4 = (Robot*) [[NSClassFromString(robotClass4) alloc] init];
+      _robots = [NSMutableArray arrayWithArray:@[robot1,robot4]];
       
       //spawn two robots
       robot1.robotNode = [CCBReader load:@"Robot" owner:robot1];
@@ -49,7 +50,8 @@
       [robot1 _run];
       robot1.creator = robotCreator1;
       robot1.robotClass = robotClass1;
-      
+     
+        /*
       robot2.robotNode = [CCBReader load:@"Robot" owner:robot2];
       CGSize screenSize = [[CCDirector sharedDirector] viewSize];
       robot2.robotNode.position = ccp(screenSize.width - 50, 100);
@@ -69,6 +71,19 @@
         robot3.robotNode.rotation = 180;
         robot3.creator = robotCreator3;
         robot3.robotClass = robotClass3;
+         */
+        
+        robot4.robotNode = [CCBReader load:@"Robot" owner:robot4];
+        CGSize screenSize3 = [[CCDirector sharedDirector] viewSize];
+        robot4.robotNode.position = ccp(screenSize3.width - 150, 100);
+        [self addChild:robot4.robotNode];
+        robot4.gameBoard = self;
+        [robot4 _run];
+        robot4.robotNode.rotation = 180;
+        robot4.creator = robotCreator4;
+        robot4.robotClass = robotClass4;
+        
+        
     }
 
     - (void)transitionToGameOverScreen:(Robot *)robot {
