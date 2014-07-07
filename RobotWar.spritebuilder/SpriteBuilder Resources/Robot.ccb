@@ -10,7 +10,11 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
+<<<<<<< HEAD
 	<integer>10</integer>
+=======
+	<integer>8</integer>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
@@ -561,19 +565,33 @@
 						<array>
 							<dict>
 								<key>UUID</key>
+<<<<<<< HEAD
 								<integer>7</integer>
 								<key>baseClass</key>
 								<string>CCParticleSystem</string>
+=======
+								<integer>5</integer>
+								<key>baseClass</key>
+								<string>CCSprite</string>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 								<key>children</key>
 								<array/>
 								<key>customClass</key>
 								<string></string>
 								<key>displayName</key>
+<<<<<<< HEAD
 								<string>CCParticleSystem</string>
 								<key>memberVarAssignmentName</key>
 								<string></string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
+=======
+								<string>fieldOfView</string>
+								<key>memberVarAssignmentName</key>
+								<string>_fieldOfViewNode</string>
+								<key>memberVarAssignmentType</key>
+								<integer>2</integer>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 								<key>properties</key>
 								<array>
 									<dict>
@@ -591,7 +609,11 @@
 										<string>Position</string>
 										<key>value</key>
 										<array>
+<<<<<<< HEAD
 											<real>1.1000000238418579</real>
+=======
+											<real>0.068000003695487976</real>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 											<real>0.5</real>
 											<integer>0</integer>
 											<integer>2</integer>
@@ -616,14 +638,21 @@
 										<string>ScaleLock</string>
 										<key>value</key>
 										<array>
+<<<<<<< HEAD
 											<real>0.10035349428653717</real>
 											<real>0.07224186509847641</real>
 											<false/>
+=======
+											<real>1</real>
+											<real>1</real>
+											<true/>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 											<integer>0</integer>
 										</array>
 									</dict>
 									<dict>
 										<key>name</key>
+<<<<<<< HEAD
 										<string>emitterMode</string>
 										<key>type</key>
 										<string>IntegerLabeled</string>
@@ -639,10 +668,28 @@
 										<array>
 											<real>40</real>
 											<real>20</real>
+=======
+										<string>rotation</string>
+										<key>type</key>
+										<string>Degrees</string>
+										<key>value</key>
+										<real>45</real>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>spriteFrame</string>
+										<key>type</key>
+										<string>SpriteFrame</string>
+										<key>value</key>
+										<array>
+											<string></string>
+											<string>fieldOfView.png</string>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 										</array>
 									</dict>
 									<dict>
 										<key>name</key>
+<<<<<<< HEAD
 										<string>emissionRate</string>
 										<key>type</key>
 										<string>Float</string>
@@ -696,10 +743,73 @@
 										<array>
 											<real>0.0</real>
 											<real>0.0</real>
+=======
+										<string>opacity</string>
+										<key>type</key>
+										<string>Float</string>
+										<key>value</key>
+										<real>0.25</real>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>color</string>
+										<key>type</key>
+										<string>Color3</string>
+										<key>value</key>
+										<array>
+											<real>0.0</real>
+											<real>1</real>
+											<real>1</real>
+											<real>0.25</real>
+										</array>
+									</dict>
+								</array>
+								<key>selected</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>UUID</key>
+								<integer>6</integer>
+								<key>baseClass</key>
+								<string>CCNodeColor</string>
+								<key>children</key>
+								<array/>
+								<key>customClass</key>
+								<string></string>
+								<key>displayName</key>
+								<string>Barrel</string>
+								<key>memberVarAssignmentName</key>
+								<string></string>
+								<key>memberVarAssignmentType</key>
+								<integer>2</integer>
+								<key>properties</key>
+								<array>
+									<dict>
+										<key>name</key>
+										<string>name</string>
+										<key>type</key>
+										<string>StringSimple</string>
+										<key>value</key>
+										<string></string>
+									</dict>
+									<dict>
+										<key>name</key>
+										<string>position</string>
+										<key>type</key>
+										<string>Position</string>
+										<key>value</key>
+										<array>
+											<real>0.068000003695487976</real>
+											<real>0.5</real>
+											<integer>0</integer>
+											<integer>2</integer>
+											<integer>2</integer>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 										</array>
 									</dict>
 									<dict>
 										<key>name</key>
+<<<<<<< HEAD
 										<string>startSpin</string>
 										<key>type</key>
 										<string>FloatVar</string>
@@ -707,10 +817,22 @@
 										<array>
 											<real>0.0</real>
 											<real>0.0</real>
+=======
+										<string>contentSize</string>
+										<key>type</key>
+										<string>Size</string>
+										<key>value</key>
+										<array>
+											<real>40</real>
+											<real>10</real>
+											<integer>0</integer>
+											<integer>0</integer>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 										</array>
 									</dict>
 									<dict>
 										<key>name</key>
+<<<<<<< HEAD
 										<string>endSpin</string>
 										<key>type</key>
 										<string>FloatVar</string>
@@ -718,10 +840,20 @@
 										<array>
 											<real>0.0</real>
 											<real>0.0</real>
+=======
+										<string>anchorPoint</string>
+										<key>type</key>
+										<string>Point</string>
+										<key>value</key>
+										<array>
+											<real>0.068473048508167267</real>
+											<real>0.5</real>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 										</array>
 									</dict>
 									<dict>
 										<key>name</key>
+<<<<<<< HEAD
 										<string>angle</string>
 										<key>type</key>
 										<string>FloatVar</string>
@@ -729,10 +861,22 @@
 										<array>
 											<real>90</real>
 											<real>10</real>
+=======
+										<string>scale</string>
+										<key>type</key>
+										<string>ScaleLock</string>
+										<key>value</key>
+										<array>
+											<real>1</real>
+											<real>1</real>
+											<false/>
+											<integer>0</integer>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 										</array>
 									</dict>
 									<dict>
 										<key>name</key>
+<<<<<<< HEAD
 										<string>startColor</string>
 										<key>type</key>
 										<string>Color4FVar</string>
@@ -750,10 +894,22 @@
 												<real>0.0</real>
 												<real>0.0</real>
 											</array>
+=======
+										<string>color</string>
+										<key>type</key>
+										<string>Color3</string>
+										<key>value</key>
+										<array>
+											<real>0.49701762199401855</real>
+											<real>0.49701762199401855</real>
+											<real>0.49701762199401855</real>
+											<real>1</real>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 										</array>
 									</dict>
 									<dict>
 										<key>name</key>
+<<<<<<< HEAD
 										<string>endColor</string>
 										<key>type</key>
 										<string>Color4FVar</string>
@@ -772,6 +928,13 @@
 												<real>0.0</real>
 											</array>
 										</array>
+=======
+										<string>opacity</string>
+										<key>type</key>
+										<string>Float</string>
+										<key>value</key>
+										<real>1</real>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 									</dict>
 									<dict>
 										<key>name</key>
@@ -780,6 +943,7 @@
 										<string>Blendmode</string>
 										<key>value</key>
 										<array>
+<<<<<<< HEAD
 											<integer>1</integer>
 											<integer>1</integer>
 										</array>
@@ -844,6 +1008,12 @@
 										<key>value</key>
 										<string>ccbResources/ccbParticleFire.png</string>
 									</dict>
+=======
+											<integer>770</integer>
+											<integer>771</integer>
+										</array>
+									</dict>
+>>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 								</array>
 							</dict>
 						</array>
@@ -900,7 +1070,7 @@
 								<key>value</key>
 								<array>
 									<real>0.068473048508167267</real>
-									<real>0.48075279593467712</real>
+									<real>0.5</real>
 								</array>
 							</dict>
 							<dict>
@@ -923,9 +1093,9 @@
 								<string>Color3</string>
 								<key>value</key>
 								<array>
-									<real>0.40392157435417175</real>
-									<real>0.37254902720451355</real>
-									<real>0.38431373238563538</real>
+									<real>0.49654757976531982</real>
+									<real>0.49654757976531982</real>
+									<real>0.49654757976531982</real>
 									<real>1</real>
 								</array>
 							</dict>

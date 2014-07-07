@@ -18,8 +18,7 @@
   [[CCDirector sharedDirector] replaceScene:gameOverScene withTransition:transition];
 }
 
-- (void)displayWinMessage
-{
+- (void)displayWinMessage {
       _winnerLabel.string = [NSString stringWithFormat:@"%@'s %@ wins this battle!", self.winnerName, self.winnerClass];
 }
 
