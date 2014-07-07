@@ -10,4 +10,6 @@
 
 @interface TurretRobot : Robot
 
+@property CGPoint lastKnownPosition;
+
 @end

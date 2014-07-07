@@ -14,6 +14,7 @@
 #import "SimpleRobot.h"
 #import "GameConstants.h"
 #import "AdvancedRobot.h"
+#import "TurretRobot.h"
 #import "Helpers.h"
 #import "Configuration.h"
 
@@ -50,8 +51,8 @@
   robot1.robotClass = robotClass1;
   
   robot2.robotNode = [CCBReader load:@"Robot" owner:robot2];
-  CGSize screenSize = [[CCDirector sharedDirector] viewSize];
-  robot2.robotNode.position = ccp(screenSize.width - 50, 100);
+  CGSize thescreenSize = [[CCDirector sharedDirector] viewSize];
+  robot2.robotNode.position = ccp(thescreenSize.width - 50, 100);
   [self addChild:robot2.robotNode];
   robot2.gameBoard = self;
   [robot2 _run];
