@@ -12,11 +12,8 @@
 #import "GameOverScene.h"
 #import "Robot_Framework.h"
 #import "GameConstants.h"
-<<<<<<< HEAD
 #import "AdvancedRobot.h"
 #import "TurretRobot.h"
-=======
->>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 #import "Helpers.h"
 #import "Configuration.h"
 
@@ -36,7 +33,6 @@
 }
 
 - (void)didLoadFromCCB {
-<<<<<<< HEAD
   _bullets = [NSMutableArray array];
   
   _robots = [NSMutableArray array];
@@ -65,7 +61,6 @@
   robot2.robotNode.rotation = 180;
   robot2.creator = robotCreator2;
   robot2.robotClass = robotClass2;
-=======
     
     _bullets = [NSMutableArray array];
     
@@ -102,7 +97,6 @@
     robot2.robotClass = botClass2;
     
     [self updateScoreLabels];
->>>>>>> 6107791e1d41a9e2f7af7a378bf9a60b9728efcf
 }
 
 - (void)transitionToGameOverScreen:(Robot *)robot {

@@ -8,8 +8,17 @@
 
 #import "Robot.h"
 
+typedef NS_ENUM(NSInteger, RobotState) {
+    RobotStateDefault,
+    RobotStateTurnaround,
+    RobotStateFiring,
+    RobotStateSearching
+};
+
 @interface TurretRobot : Robot
 
 @property CGPoint lastKnownPosition;
+
+@property (nonatomic, assign) RobotState currentRobotState;
 
 @end

@@ -25,6 +25,11 @@ static const float GUN_ANGLE_TOLERANCE = 2.0f;
 @implementation TurretRobot {
     TurretState _currentState;
     float _timeSinceLastEnemyHit;
+        CGPoint _lastKnownPosition;
+        CGFloat _lastKnownPositionTimestamp;
+        
+        int actionIndex;
+
 }
 
 - (id)init {
@@ -55,30 +60,65 @@ static const float GUN_ANGLE_TOLERANCE = 2.0f;
 }
 
 - (void)run {
+    actionIndex = 0;
     while (true) {
-        switch (_currentState) {
-            case kTurretStateScanning:
-                [self turnRobotLeft:20];
-                [self moveAhead:60];
-                [self hitWall:180 hitAngle:90];
-                [self shoot];
-                break;
-                
-            case kTurretStateFiring:
-                if (self.currentTimestamp - _timeSinceLastEnemyHit > 2.5f) {
-                    [self cancelActiveAction];
-                    _currentState = kTurretStateScanning;
-                } else {
-                    [self shoot];
-                }
-                break;
+        while (_currentRobotState == RobotStateFiring) {
+            [self performNextFiringAction];
+        }
+        
+        while (_currentRobotState == RobotStateSearching) {
+            [self performNextSearchingAction];
+        }
+        
+        while (_currentRobotState == RobotStateDefault) {
+            [self performNextDefaultAction];
         }
     }
 }
 
-- (void)_bulletHitEnemy:(Bullet*)bullet {
-    _timeSinceLastEnemyHit = self.currentTimestamp;
-    _currentState = kTurretStateFiring;
+- (void)performNextDefaultAction {
+    switch (actionIndex%1) {
+        case 0:
+            [self moveAhead:100];
+            break;
+    }
+    actionIndex++;
+}
+
+- (void) performNextFiringAction {
+    if ((self.currentTimestamp - _lastKnownPositionTimestamp) > 1.f) {
+        self.currentRobotState = RobotStateSearching;
+    } else {
+        CGFloat angle = [self angleBetweenGunHeadingDirectionAndWorldPosition:_lastKnownPosition];
+        if (angle >= 0) {
+            [self turnGunRight:abs(angle)];
+        } else {
+            [self turnGunLeft:abs(angle)];
+        }
+        [self shoot];
+    }
+}
+
+
+- (void)performNextSearchingAction {
+    switch (actionIndex%4) {
+        case 0:
+            [self moveAhead:50];
+            break;
+            
+        case 1:
+            [self turnRobotLeft:20];
+            break;
+            
+        case 2:
+            [self moveAhead:50];
+            break;
+            
+        case 3:
+            [self turnRobotRight:20];
+            break;
+    }
+    actionIndex++;
 }
 
 -(void)gotHit{
@@ -89,24 +129,14 @@ static const float GUN_ANGLE_TOLERANCE = 2.0f;
         j = 0;
         j++;
         NSLog(@"TERMINATOR HAS %d HEALTH! IT IS INCREDIBLY LOW!!!", i);
-        [self moveBack:200];
+        [self moveBack:500];
         [self turnRobotLeft:90];
-        [self moveAhead:200];
-        if (j == 2) {
+        [self moveAhead:500];
+                [self turnRobotLeft:90];
+        if (j == 9) {
             [self shoot];
             [self shoot];        [self shoot];
             [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];        [self shoot];
-            [self shoot];
         }
     }else{
     NSLog(@"TERMINATOR HAS %d HEALTH!", i);
@@ -126,13 +156,12 @@ static const float GUN_ANGLE_TOLERANCE = 2.0f;
             }
             [self turnRobotRight:angleBetweenTurretAndEnemy];
         }
-    [self moveBack:320];
-        [self shoot];
-        [self shoot];
+    [self moveBack:50];
         [self shoot];
         [self shoot];
     [self moveAhead:0];
     }
 }
+
 
 @end
